@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	
+	 <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+<!-- 用户的Servlet -->	
+  <servlet>
+    <servlet-name>UserListServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.userservlet.UserListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserListServlet</servlet-name>
+    <url-pattern>/servlet/UserListServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>UserAddServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.userservlet.UserAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserAddServlet</servlet-name>
+    <url-pattern>/servlet/UserAddServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>UserDeleteServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.userservlet.UserDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserDeleteServlet</servlet-name>
+    <url-pattern>/servlet/UserDeleteServlet</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.userservlet.UserUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <url-pattern>/servlet/UserUpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+<!-- 挂号的Servlet -->
+<servlet>
+    <servlet-name>GetNumberFindServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.getnumberservlet.GetNumberFindServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetNumberFindServlet</servlet-name>
+    <url-pattern>/servlet/GetNumberFindServlet</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <servlet-name>GetNumberAddServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.getnumberservlet.GetNumberAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetNumberAddServlet</servlet-name>
+    <url-pattern>/servlet/GetNumberAddServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetNumberDeleteServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.getnumberservlet.GetNumberDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetNumberDeleteServlet</servlet-name>
+    <url-pattern>/servlet/GetNumberDeleteServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>GetNumberUpdateServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.getnumberservlet.GetNumberUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetNumberUpdateServlet</servlet-name>
+    <url-pattern>/servlet/GetNumberUpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>GetNumberListServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.getnumberservlet.GetNumberListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetNumberListServlet</servlet-name>
+    <url-pattern>/servlet/GetNumberListServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 医生的Servlet -->
+   <servlet>
+    <servlet-name>DoctorFindServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.doctorservlet.DoctorFindServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorFindServlet</servlet-name>
+    <url-pattern>/servlet/DoctorFindServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>DoctorAddServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.doctorservlet.DoctorAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorAddServlet</servlet-name>
+    <url-pattern>/servlet/DoctorAddServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>DoctorDeleteServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.doctorservlet.DoctorDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorDeleteServlet</servlet-name>
+    <url-pattern>/servlet/DoctorDeleteServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>DoctorUpdateServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.doctorservlet.DoctorUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorUpdateServlet</servlet-name>
+    <url-pattern>/servlet/DoctorUpdateServlet</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <servlet-name>DoctorListServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.doctorservlet.DoctorListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorListServlet</servlet-name>
+    <url-pattern>/servlet/DoctorListServlet</url-pattern>
+  </servlet-mapping> 
+  
+  <!-- 排诊表的Servlet -->
+  <servlet>
+    <servlet-name>DiagnosisAddServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.diagnosisservlet.DiagnosisAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DiagnosisAddServlet</servlet-name>
+    <url-pattern>/servlet/DiagnosisAddServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>DiagnosisDeleteServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.diagnosisservlet.DiagnosisDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DiagnosisDeleteServlet</servlet-name>
+    <url-pattern>/servlet/DiagnosisDeleteServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>DiagnosisUpdateServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.diagnosisservlet.DiagnosisUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DiagnosisUpdateServlet</servlet-name>
+    <url-pattern>/servlet/DiagnosisUpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DiagnosisListServlet</servlet-name>
+    <servlet-class>com.hospital.servlet.diagnosisservlet.DiagnosisListServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DiagnosisListServlet</servlet-name>
+    <url-pattern>/servlet/DiagnosisListServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.hospital.servlet.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/servlet/Login</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

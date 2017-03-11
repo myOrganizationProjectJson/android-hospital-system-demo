@@ -1,0 +1,157 @@
+#nav {
+
+width:174px;
+
+    line-height: 24px;
+
+list-style-type: none;
+
+text-align:left;
+
+    /*�������ul�˵����иߺͱ���ɫ*/
+
+}
+
+/*==================һ��Ŀ¼===================*/
+
+#nav a {
+
+width: 174px;
+
+display: block;
+
+padding-left:20px;
+
+/*Width(һ��Ҫ)�����������Li�����*/
+
+}
+
+#nav li {
+
+border-bottom:#FFF 1px solid; /*�����һ��ױ�*/
+
+float:left;
+
+background-color: #FECFD6;
+
+color:#ffffff;
+
+font-weight:bold;
+
+background: url(../images/dot_o.gif) no-repeat 8px 8px;
+
+}
+
+#nav li a:hover{
+
+background:#F85B78; /*һ��Ŀ¼onMouseOver��ʾ�ı���ɫ*/
+
+}
+
+#nav a:link {
+
+color:#ffffff; text-decoration:none;
+
+}
+
+#nav a:visited {
+
+color:#ffffff;text-decoration:none;
+
+}
+
+#nav a:hover {
+
+color:#FFF;text-decoration:none;font-weight:bold;
+
+}
+
+/*==================����Ŀ¼===================*/
+
+#nav li ul {
+
+list-style:none;
+
+text-align:left;
+
+}
+
+#nav li ul li{
+
+background: #99d5fa; /*����Ŀ¼�ı���ɫ*/
+
+font-weight:normal;
+
+}
+
+#nav li ul a{
+
+         padding-left:20px;
+
+         width:174px;
+
+/* padding-left����Ŀ¼�����������ƶ�����Width������������=(�ܿ��-padding-left)*/
+
+}
+
+/*�����Ƕ���Ŀ¼��t����ʽ*/
+
+#nav li ul a:link {
+
+color:#000; text-decoration:none;
+
+}
+
+#nav li ul a:visited {
+
+color:#000;text-decoration:none;
+
+}
+
+#nav li ul a:hover {
+
+color:#F3F3F3;
+
+text-decoration:none;
+
+font-weight:normal;
+
+background:#FFAA1C;
+
+/* ����onmouseover��������ɫ������ɫ*/
+
+}
+
+/*==============================*/
+
+#nav li:hover ul {
+
+left: auto;
+
+}
+
+#nav li.sfhover ul {
+
+left: auto;
+
+}
+
+#content {
+
+clear: left;
+
+}
+
+#nav ul.collapsed {
+
+display: none;
+
+}
+
+-->
+
+#PARENT{
+
+width:174px;
+
+}

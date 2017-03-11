@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+    <TextView android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="个人信息"
+    	android:textSize="12pt"
+    	android:gravity="center"
+    	android:padding="5pt"/>
+    
+    <LinearLayout android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:padding="3pt">
+        <TextView android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:text="真实姓名："
+    		android:layout_weight="0.8"/>
+        <EditText android:id="@+id/userTureName"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="0.5"/>
+        <Button android:id="@+id/changeUserTrueName"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="0.8"
+    		android:text="修改"/>
+    </LinearLayout>
+    
+    <Button android:id="@+id/getInfoButton"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="查看医院排诊信息"
+    	android:layout_gravity="center"/>
+    
+    <TextView android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="已挂号内容"
+    	android:textSize="12pt"
+    	android:gravity="center"
+    	android:padding="5pt"/>
+    <TextView android:id="@+id/getNumberContent"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="您未挂号！"
+    	android:gravity="center"/>
+    <Button android:id="@+id/getNumber"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="挂号"
+    	android:layout_margin="5pt"/>
+    
+
+</LinearLayout>
